@@ -1,0 +1,84 @@
+/* views/style.css */
+:root {
+    --bg-dark: #0a0a0a;
+    --card-bg: #111111;
+    --border-color: #333333;
+    --accent-blue: #3b82f6;
+    --text-main: #e5e5e5;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.container {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 30px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th {
+    text-align: left;
+    color: #888;
+    font-size: 0.8rem;
+    padding: 10px;
+    border-bottom: 2px solid var(--border-color);
+}
+
+td {
+    padding: 12px 10px;
+    border-bottom: 1px solid #222;
+    font-size: 0.9rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    background: #000;
+    border: 1px solid var(--border-color);
+    color: white;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--accent-blue);
+    color: white;
+}
